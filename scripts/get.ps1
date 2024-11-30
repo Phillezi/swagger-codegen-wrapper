@@ -1,6 +1,6 @@
 
 $unixUrl = "https://raw.githubusercontent.com/Phillezi/swagger-codegen-wrapper/main/codegenw"
-$windowsUrl = "https://raw.githubusercontent.com/Phillezi/swagger-codegen-wrapper/main/codegenw"
+$windowsUrl = "https://raw.githubusercontent.com/Phillezi/swagger-codegen-wrapper/main/codegenw.cmd"
 $codegenCliUrl = "https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.62/swagger-codegen-cli-3.0.62.jar"
 
 $codegenCliPath = ".\.codegen\swagger-codegen-cli.jar"
