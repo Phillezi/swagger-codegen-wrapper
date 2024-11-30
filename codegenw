@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Check if Java is installed
+if ! command -v java &> /dev/null; then
+    echo "Error: Java is not installed or not in your PATH."
+    echo "Please install Java and ensure it's in your PATH."
+    exit 1
+fi
+
+# Check if the Swagger Codegen JAR exists
+if [ ! -f "./.codegen/swagger-codegen-cli.jar" ]; then
+    echo "Error: swagger-codegen-cli.jar not found!"
+    echo "run the following command to install it:"
+    echo "wget https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.62/swagger-codegen-cli-3.0.62.jar -O ./.codegen/swagger-codegen-cli.jar"
+    exit 1
+fi
+
+# Run the JAR with any passed arguments
+java -jar ./.codegen/swagger-codegen-cli.jar "$@"
+
