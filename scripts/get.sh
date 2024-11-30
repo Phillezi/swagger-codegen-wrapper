@@ -13,6 +13,8 @@ WINDOWS_SCRIPT_PATH="codegenw.cmd"
 echo "Downloading Unix wrapper script..."
 curl -Lo "$UNIX_SCRIPT_PATH" "$UNIX_URL"
 
+chmod +x "$UNIX_SCRIPT_PATH"
+
 echo "Downloading Windows wrapper script..."
 curl -Lo "$WINDOWS_SCRIPT_PATH" "$WINDOWS_URL"
 
