@@ -23,4 +23,4 @@ curl -Lo "$CODEGEN_CLI_PATH" "$CODEGEN_CLI_URL"
 
 echo "All files downloaded successfully!"
 echo "try running:"
-echo "codegenw --help"
+echo "./codegenw --help"
